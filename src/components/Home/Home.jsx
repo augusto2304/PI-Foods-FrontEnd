@@ -34,6 +34,7 @@ function Home() {
         dispatch(getRecipes())
     }, [dispatch]);
 
+    
 
     function handleClick(e) {
         e.preventDefault();
