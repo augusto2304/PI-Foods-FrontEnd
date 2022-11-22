@@ -8,7 +8,8 @@ import store from './reducer/store';
 import axios from 'axios';
 
 /* axios.default.baseURL = 'http://localhost:3001' */
-axios.default.baseURL = 'https://pi-foods-backend-production.up.railway.app/'
+axios.defaults.baseURL = 'https://pi-foods-backend-production.up.railway.app/'
+
 ReactDOM.render(
   <Provider store={store}>
   <React.StrictMode>
