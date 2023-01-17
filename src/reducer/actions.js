@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-export function getRecipes() {
+
+ export function getRecipes() {
     return async function (dispatch) {
         try {
             var json = await axios.get('/recipes');
@@ -12,7 +13,9 @@ export function getRecipes() {
             console.log(error);
         }
     }
-};
+}; 
+
+
 
 export function getRecipeByName(name) {
     return async function (dispatch) {
@@ -108,3 +111,11 @@ export function setCurrentPage(page){
         payload: page
     }
 };
+
+
+
+
+
+
+
+
